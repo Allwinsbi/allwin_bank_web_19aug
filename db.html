@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Transfers</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h2>Account Balance</h2>
+                <p>RS.10,000.00</p>
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <h2>Debit Card Transactions</h2>
+                <ul>
+                    <li>RS.500.00 - Coffee Shop</li>
+                    <li>RS.200.00 - Grocery Store</li>
+                </ul>
+                <button>View All</button>
+            </div>
+            <div class="card">
+                <h2>Credit Card Transactions</h2>
+                <ul>
+                    <li>RS.150.00 - Online Purchase</li>
+                    <li>RS.100.00 - Restaurant</li>
+                </ul>
+                <button>View All</button>
+            </div>
+            <div class="card">
+                <h2>Loan Options</h2>
+                <ul>
+                    <li>Personal Loan - RS.10,000</li>
+                    <li>Home Loan - RS.50,000</li>
+                    <li>Car Loan - RS.20,000</li>
+                </ul>
+                <button>Apply Now</button>
+            </div>
+            <div class="card">
+                <h2>Transaction History</h2>
+                <ul>
+                    <li>RS.500.00 - Debit Card</li>
+                    <li>RS.150.00 - Credit Card</li>
+                    <li>RS.200.00 - Transfer</li>
+                </ul>
+                <button> view All</button>
+                
+            </div>
+            <div class="card">
+                <h2>Credit Score</h2>
+                <p>750.00</p>
+                <button> Check Score</button>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
